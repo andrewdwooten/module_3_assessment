@@ -19,6 +19,16 @@ class Api::V1::ItemsController < ApplicationController
     end
   end
 
+  def create
+    byebug
+    item = Item.new(item_params)
+    if item.save
+      render json: item
+    else
+      render json: 'Something went terribly wrong'
+    end
+  end
+
   private
 
   def set_item

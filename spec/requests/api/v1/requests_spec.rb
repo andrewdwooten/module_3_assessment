@@ -63,11 +63,11 @@ describe 'api v1 requests' do
 
   it 'can create an item' do
     VCR.use_cassette('requests/api/v1/item_create') do
-      item_params =  {item: {name:        'create_test_name',
-                             description: 'create_test_des',
-                             image_url:   'create_test_img'}
-                      }
-      post 'api/v1/items', params: item_params
+      creation_params =  {item: {name:        'create_test_name',
+                                 description: 'create_test_des',
+                                 image_url:   'create_test_img'}
+                         }
+      post 'api/v1/items', params: creation_params
 
 
         expect(Item.count).to eq(3)
