@@ -15,15 +15,14 @@ class Api::V1::ItemsController < ApplicationController
     if item.nil?
       render json: 'Something went terribly wrong'
     else item.destroy
-      render json: 'No content'
+      render status: 204, json: ''
     end
   end
 
   def create
-    byebug
     item = Item.new(item_params)
     if item.save
-      render json: item
+      render status: 201, json: item
     else
       render json: 'Something went terribly wrong'
     end

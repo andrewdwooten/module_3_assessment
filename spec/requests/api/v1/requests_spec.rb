@@ -50,12 +50,13 @@ describe 'api v1 requests' do
     end
   end
 
-  it 'can return an item' do
+  it 'can delete an item' do
     VCR.use_cassette('requests/api/v1/item_delete') do
 
       expect(Item.count).to eq(2)
       delete 'api/v1/items/1'
 
+      expect(response.status).to eq(204)
       expect(Item.count).to eq(1)
       expect(Item.where(id: item.id).empty?).to eq(true)
     end
@@ -64,21 +65,20 @@ describe 'api v1 requests' do
   it 'can create an item' do
     VCR.use_cassette('requests/api/v1/item_create') do
       creation_params =  {item: {name:        'create_test_name',
-                                 description: 'create_test_des',
+                                 description: 'create_test_desc',
                                  image_url:   'create_test_img'}
                          }
-      post 'api/v1/items', params: creation_params
+      post 'api/v1/items', creation_params
 
 
         expect(Item.count).to eq(3)
 
         test_item = Item.last
 
+        expect(response.status).to eq(201)
         expect(test_item['name']).to eq('create_test_name')
         expect(test_item['description']).to eq('create_test_desc')
         expect(test_item['image_url']).to eq('create_test_img')
-        expect(test_item.has_key?('created_at')).to eq(false)
-        expect(test_item.has_key?('udpated_at')).to eq(false)
     end
   end
 end
