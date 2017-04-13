@@ -33,4 +33,20 @@ describe 'api v1 requests' do
       expect(last.has_key?('udpated_at')).to eq(false)
     end
   end
+
+  it 'can return an items' do
+    VCR.use_cassette('requests/api/v1/item_show') do
+      get 'api/v1/items/1'
+      item = JSON.parse(response.body)
+
+      expect(response.status).to eq(200)
+
+      expect(item['name']).to eq('test1')
+      expect(item['description']).to eq('cool_thing1')
+      expect(item['image_url']).to eq('image1')
+      expect(item.has_key?('created_at')).to eq(false)
+      expect(item.has_key?('udpated_at')).to eq(false)
+
+    end
+  end
 end
