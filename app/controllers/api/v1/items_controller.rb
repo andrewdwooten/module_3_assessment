@@ -1,7 +1,7 @@
 class Api::V1::ItemsController < ApplicationController
   attr_reader :item
 
-  before_action :set_item, only: [:show, :destroy]
+  before_action :set_item, only: [:show, :destroy, :update]
 
   def index
     render json: Item.all
@@ -19,6 +19,14 @@ class Api::V1::ItemsController < ApplicationController
     end
   end
 
+  def update
+    if item.nil?
+      render status: 400
+    else
+      render json: item.update(item_params)
+    end
+  end
+  
   def create
     item = Item.new(item_params)
     if item.save

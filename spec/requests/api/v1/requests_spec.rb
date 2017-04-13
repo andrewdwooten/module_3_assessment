@@ -82,5 +82,30 @@ describe 'requests' do
           expect(test_item['image_url']).to eq('create_test_img')
       end
     end
+
+    it 'can update an item' do
+      VCR.use_cassette('requests/api/v1/item_update') do
+        update_params =  {item: {name:        'name_test_update',
+                                 description: 'desc_test_update',
+                                 image_url:   'img_test_update'}
+                           }
+
+        expect(item.name).to eq('test1')
+        expect(item.description).to eq('cool_thing1')
+        expect(item.image_url).to eq('image1')
+
+        put "api/v1/items/#{item.id}", update_params
+
+
+          expect(Item.count).to eq(2)
+
+          updated_item = Item.find(item.id)
+
+          expect(response.status).to eq(200)
+          expect(updated_item['name']).to eq('name_test_update')
+          expect(updated_item['description']).to eq('desc_test_update')
+          expect(updated_item['image_url']).to eq('img_test_update')
+      end
+    end
   end
 end
