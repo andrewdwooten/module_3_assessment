@@ -60,4 +60,25 @@ describe 'api v1 requests' do
       expect(Item.where(id: item.id).empty?).to eq(true)
     end
   end
+
+  it 'can create an item' do
+    VCR.use_cassette('requests/api/v1/item_create') do
+      item_params =  {item: {name:        'create_test_name',
+                             description: 'create_test_des',
+                             image_url:   'create_test_img'}
+                      }
+      post 'api/v1/items', params: item_params
+
+
+        expect(Item.count).to eq(3)
+
+        test_item = Item.last
+
+        expect(test_item['name']).to eq('create_test_name')
+        expect(test_item['description']).to eq('create_test_desc')
+        expect(test_item['image_url']).to eq('create_test_img')
+        expect(test_item.has_key?('created_at')).to eq(false)
+        expect(test_item.has_key?('udpated_at')).to eq(false)
+    end
+  end
 end

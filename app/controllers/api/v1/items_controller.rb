@@ -24,4 +24,10 @@ class Api::V1::ItemsController < ApplicationController
   def set_item
     @item = Item.find(params[:id])
   end
+
+  def item_params
+    params.require(:item).permit(:name,
+                                 :description,
+                                 :image_url)
+  end
 end
