@@ -34,7 +34,7 @@ describe 'api v1 requests' do
     end
   end
 
-  it 'can return an items' do
+  it 'can return an item' do
     VCR.use_cassette('requests/api/v1/item_show') do
       get 'api/v1/items/1'
       item = JSON.parse(response.body)
@@ -47,6 +47,17 @@ describe 'api v1 requests' do
       expect(item.has_key?('created_at')).to eq(false)
       expect(item.has_key?('udpated_at')).to eq(false)
 
+    end
+  end
+
+  it 'can return an item' do
+    VCR.use_cassette('requests/api/v1/item_delete') do
+
+      expect(Item.count).to eq(2)
+      delete 'api/v1/items/1'
+
+      expect(Item.count).to eq(1)
+      expect(Item.where(id: item.id).empty?).to eq(true)
     end
   end
 end
