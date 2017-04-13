@@ -1,0 +1,38 @@
+<h2><%= @stores.count %> Total Stores</h2>
+
+  <div id='stores_container'>
+    <table>
+      <th>
+        <td>
+          Name
+        </td>
+        <td>
+          City
+        </td>
+        <td>
+          Type
+        </td>
+        <td>
+          Distance
+        </td>
+      </th>
+      <% @stores.each do |store| %>
+        <div id='store_instance'>
+          <tr>
+            <td>
+              <%= store.longName %>
+            </td>
+            <td>
+              <%= store.city %>
+            </td>
+            <td>
+              <%= store.storeType %>
+            </td>
+            <td>
+              <%= store.description %>
+            </td>
+          </tr>
+        <% end %>
+        </table>
+      </div>
+  </div>

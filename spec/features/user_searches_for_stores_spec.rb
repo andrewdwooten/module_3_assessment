@@ -10,5 +10,7 @@ feature 'user visits root and searches for best buys' do
     click_on "Search"
 
     expect(current_path).to eq('/search')
+
+    expect(page).to have_content("16 Total Stores")
   end
 end
