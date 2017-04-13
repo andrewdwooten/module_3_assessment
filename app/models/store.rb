@@ -1,4 +1,5 @@
 class Store < OpenStruct
+  
   attr_reader :store_searcher
 
   def store_searcher

@@ -1,4 +1,4 @@
-<h2><%= @stores.count %> Total Stores</h2>
+<h2><%= @count %> Total Stores</h2>
 
   <div id='stores_container'>
     <table>
@@ -29,10 +29,11 @@
               <%= store.storeType %>
             </td>
             <td>
-              <%= store.description %>
+              <%= store.distance %>
             </td>
           </tr>
         <% end %>
+        <%= paginate @stores %>
         </table>
       </div>
   </div>
