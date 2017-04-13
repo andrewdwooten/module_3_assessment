@@ -1,5 +1,5 @@
 class Store < OpenStruct
-  
+
   attr_reader :store_searcher
 
   def store_searcher
@@ -16,7 +16,8 @@ class Store < OpenStruct
       Store.new(longName:     store[:longName],
                 storeType:    store[:storeType],
                 city:         store[:city],
-                distance:     store[:distance])
+                distance:     store[:distance],
+                phone:        store[:phone])
     end
   end
 end

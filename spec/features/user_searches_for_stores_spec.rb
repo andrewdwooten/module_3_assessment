@@ -21,6 +21,7 @@ feature 'user visits root and searches for best buys' do
         expect(page).to have_content('DENVER')
         expect(page).to have_content('Mobile SAS')
         expect(page).to have_content('3.45')
+        expect(page).to have_content('303-270-9189')
       end
 
       expect(page).to have_link('2')
@@ -37,6 +38,7 @@ feature 'user visits root and searches for best buys' do
         expect(page).to have_content('AURORA')
         expect(page).to have_content('Big Box')
         expect(page).to have_content('11.65')
+        expect(page).to have_content('303-373-9284')
       end
     end
   end

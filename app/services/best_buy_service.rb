@@ -4,7 +4,7 @@ class BestBuyService
   def initialize
     @conn = Faraday.new('https://api.bestbuy.com')
     @auth = "apiKey=#{ENV['STORE_KEY']}"
-    @show = 'show=longName,storeType,city,distance'
+    @show = 'show=longName,storeType,city,distance,phone'
     @type = 'format=json'
     @page_size = 'pageSize=16'
   end

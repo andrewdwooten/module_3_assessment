@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.bestbuy.com/v1/stores(area(80202,25))?apiKey=<STORE_KEY>&format=json&pageSize=16&show=longName,storeType,city,distance
+    uri: https://api.bestbuy.com/v1/stores(area(80202,25))?apiKey=<STORE_KEY>&format=json&pageSize=16&show=longName,storeType,city,distance,phone
     body:
       encoding: US-ASCII
       string: ''
@@ -29,40 +29,40 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 13 Apr 2017 17:39:46 GMT
+      - Thu, 13 Apr 2017 18:04:47 GMT
       Server:
       - Best Buy Public APIs
       X-Cache-Hit:
       - 'true'
       Content-Length:
-      - '1877'
+      - '2251'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"from":1,"to":16,"currentPage":1,"total":16,"totalPages":1,"queryTime":"0.014","totalTime":"0.027","partial":false,"canonicalUrl":"/v1/stores(area(\"80202\",25))?show=longName,storeType,city,distance&pageSize=16&format=json&apiKey=<STORE_KEY>","stores":[{"longName":"BEST
-        BUY MOBILE - CHERRY CREEK SHOPPING CENTER","storeType":"Mobile SAS","city":"DENVER","distance":3.45},{"longName":"BEST
-        BUY - BELMAR","storeType":"Big Box","city":"LAKEWOOD","distance":5.31},{"longName":"BEST
-        BUY - COLORADO BLVD","storeType":"Big Box","city":"DENVER","distance":5.59},{"longName":"BEST
-        BUY - DENVER WEST","storeType":"Big Box","city":"LAKEWOOD","distance":8.39},{"longName":"BEST
-        BUY - WESTMINSTER","storeType":"Big Box","city":"WESTMINSTER","distance":8.52},{"longName":"BEST
-        BUY - NORTHGLENN","storeType":"Big Box","city":"DENVER","distance":9.14},{"longName":"BEST
-        BUY MOBILE - TOWN CENTER AT AURORA","storeType":"Mobile SAS","city":"AURORA","distance":9.73},{"longName":"BEST
-        BUY - AURORA","storeType":"Big Box","city":"AURORA","distance":9.79},{"longName":"BEST
-        BUY - LITTLETON","storeType":"Big Box","city":"LAKEWOOD","distance":10.44},{"longName":"BEST
-        BUY - SOUTHGLENN","storeType":"Big Box","city":"CENTENNIAL","distance":11.02},{"longName":"BEST
-        BUY - I70 & TOWER RD","storeType":"Big Box","city":"AURORA","distance":11.65},{"longName":"BEST
-        BUY MOBILE - FLATIRON CROSSING MALL","storeType":"Mobile SAS","city":"BROOMFIELD","distance":14.43},{"longName":"BEST
-        BUY - S.E. DENVER","storeType":"Big Box","city":"LONE TREE","distance":14.95},{"longName":"BEST
-        BUY - S.E. AURORA","storeType":"Big Box","city":"AURORA","distance":18.20},{"longName":"BEST
-        BUY - PARKER","storeType":"Big Box","city":"PARKER","distance":20.82},{"longName":"BEST
-        BUY - BOULDER","storeType":"Big Box","city":"BOULDER","distance":22.79}],"warnings":"Distances
+      string: '{"from":1,"to":16,"currentPage":1,"total":16,"totalPages":1,"queryTime":"0.017","totalTime":"0.030","partial":false,"canonicalUrl":"/v1/stores(area(\"80202\",25))?show=longName,storeType,city,distance,phone&pageSize=16&format=json&apiKey=<STORE_KEY>","stores":[{"longName":"BEST
+        BUY MOBILE - CHERRY CREEK SHOPPING CENTER","storeType":"Mobile SAS","city":"DENVER","distance":3.45,"phone":"303-270-9189"},{"longName":"BEST
+        BUY - BELMAR","storeType":"Big Box","city":"LAKEWOOD","distance":5.31,"phone":"303-742-8039"},{"longName":"BEST
+        BUY - COLORADO BLVD","storeType":"Big Box","city":"DENVER","distance":5.59,"phone":"303-758-5805"},{"longName":"BEST
+        BUY - DENVER WEST","storeType":"Big Box","city":"LAKEWOOD","distance":8.39,"phone":"303-273-5617"},{"longName":"BEST
+        BUY - WESTMINSTER","storeType":"Big Box","city":"WESTMINSTER","distance":8.52,"phone":"303-426-4434"},{"longName":"BEST
+        BUY - NORTHGLENN","storeType":"Big Box","city":"DENVER","distance":9.14,"phone":"303-252-8677"},{"longName":"BEST
+        BUY MOBILE - TOWN CENTER AT AURORA","storeType":"Mobile SAS","city":"AURORA","distance":9.73,"phone":"303-326-0848"},{"longName":"BEST
+        BUY - AURORA","storeType":"Big Box","city":"AURORA","distance":9.79,"phone":"303-338-5797"},{"longName":"BEST
+        BUY - LITTLETON","storeType":"Big Box","city":"LAKEWOOD","distance":10.44,"phone":"303-932-7830"},{"longName":"BEST
+        BUY - SOUTHGLENN","storeType":"Big Box","city":"CENTENNIAL","distance":11.02,"phone":"303-797-3246"},{"longName":"BEST
+        BUY - I70 & TOWER RD","storeType":"Big Box","city":"AURORA","distance":11.65,"phone":"303-373-9284"},{"longName":"BEST
+        BUY MOBILE - FLATIRON CROSSING MALL","storeType":"Mobile SAS","city":"BROOMFIELD","distance":14.43,"phone":"303-466-8624"},{"longName":"BEST
+        BUY - S.E. DENVER","storeType":"Big Box","city":"LONE TREE","distance":14.95,"phone":"303-649-9474"},{"longName":"BEST
+        BUY - S.E. AURORA","storeType":"Big Box","city":"AURORA","distance":18.20,"phone":"303-693-0166"},{"longName":"BEST
+        BUY - PARKER","storeType":"Big Box","city":"PARKER","distance":20.82,"phone":"303-840-5501"},{"longName":"BEST
+        BUY - BOULDER","storeType":"Big Box","city":"BOULDER","distance":22.79,"phone":"303-938-2889"}],"warnings":"Distances
         are in terms of miles (default)"}'
     http_version: 
-  recorded_at: Thu, 13 Apr 2017 17:40:33 GMT
+  recorded_at: Thu, 13 Apr 2017 18:04:25 GMT
 - request:
     method: get
-    uri: https://api.bestbuy.com/v1/stores(area(80202,25))?apiKey=<STORE_KEY>&format=json&pageSize=16&show=longName,storeType,city,distance
+    uri: https://api.bestbuy.com/v1/stores(area(80202,25))?apiKey=<STORE_KEY>&format=json&pageSize=16&show=longName,storeType,city,distance,phone
     body:
       encoding: US-ASCII
       string: ''
@@ -89,40 +89,40 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 13 Apr 2017 17:39:46 GMT
+      - Thu, 13 Apr 2017 18:04:47 GMT
       Server:
       - Best Buy Public APIs
       X-Cache-Hit:
       - 'true'
       Content-Length:
-      - '1877'
+      - '2251'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"from":1,"to":16,"currentPage":1,"total":16,"totalPages":1,"queryTime":"0.014","totalTime":"0.027","partial":false,"canonicalUrl":"/v1/stores(area(\"80202\",25))?show=longName,storeType,city,distance&pageSize=16&format=json&apiKey=<STORE_KEY>","stores":[{"longName":"BEST
-        BUY MOBILE - CHERRY CREEK SHOPPING CENTER","storeType":"Mobile SAS","city":"DENVER","distance":3.45},{"longName":"BEST
-        BUY - BELMAR","storeType":"Big Box","city":"LAKEWOOD","distance":5.31},{"longName":"BEST
-        BUY - COLORADO BLVD","storeType":"Big Box","city":"DENVER","distance":5.59},{"longName":"BEST
-        BUY - DENVER WEST","storeType":"Big Box","city":"LAKEWOOD","distance":8.39},{"longName":"BEST
-        BUY - WESTMINSTER","storeType":"Big Box","city":"WESTMINSTER","distance":8.52},{"longName":"BEST
-        BUY - NORTHGLENN","storeType":"Big Box","city":"DENVER","distance":9.14},{"longName":"BEST
-        BUY MOBILE - TOWN CENTER AT AURORA","storeType":"Mobile SAS","city":"AURORA","distance":9.73},{"longName":"BEST
-        BUY - AURORA","storeType":"Big Box","city":"AURORA","distance":9.79},{"longName":"BEST
-        BUY - LITTLETON","storeType":"Big Box","city":"LAKEWOOD","distance":10.44},{"longName":"BEST
-        BUY - SOUTHGLENN","storeType":"Big Box","city":"CENTENNIAL","distance":11.02},{"longName":"BEST
-        BUY - I70 & TOWER RD","storeType":"Big Box","city":"AURORA","distance":11.65},{"longName":"BEST
-        BUY MOBILE - FLATIRON CROSSING MALL","storeType":"Mobile SAS","city":"BROOMFIELD","distance":14.43},{"longName":"BEST
-        BUY - S.E. DENVER","storeType":"Big Box","city":"LONE TREE","distance":14.95},{"longName":"BEST
-        BUY - S.E. AURORA","storeType":"Big Box","city":"AURORA","distance":18.20},{"longName":"BEST
-        BUY - PARKER","storeType":"Big Box","city":"PARKER","distance":20.82},{"longName":"BEST
-        BUY - BOULDER","storeType":"Big Box","city":"BOULDER","distance":22.79}],"warnings":"Distances
+      string: '{"from":1,"to":16,"currentPage":1,"total":16,"totalPages":1,"queryTime":"0.017","totalTime":"0.030","partial":false,"canonicalUrl":"/v1/stores(area(\"80202\",25))?show=longName,storeType,city,distance,phone&pageSize=16&format=json&apiKey=<STORE_KEY>","stores":[{"longName":"BEST
+        BUY MOBILE - CHERRY CREEK SHOPPING CENTER","storeType":"Mobile SAS","city":"DENVER","distance":3.45,"phone":"303-270-9189"},{"longName":"BEST
+        BUY - BELMAR","storeType":"Big Box","city":"LAKEWOOD","distance":5.31,"phone":"303-742-8039"},{"longName":"BEST
+        BUY - COLORADO BLVD","storeType":"Big Box","city":"DENVER","distance":5.59,"phone":"303-758-5805"},{"longName":"BEST
+        BUY - DENVER WEST","storeType":"Big Box","city":"LAKEWOOD","distance":8.39,"phone":"303-273-5617"},{"longName":"BEST
+        BUY - WESTMINSTER","storeType":"Big Box","city":"WESTMINSTER","distance":8.52,"phone":"303-426-4434"},{"longName":"BEST
+        BUY - NORTHGLENN","storeType":"Big Box","city":"DENVER","distance":9.14,"phone":"303-252-8677"},{"longName":"BEST
+        BUY MOBILE - TOWN CENTER AT AURORA","storeType":"Mobile SAS","city":"AURORA","distance":9.73,"phone":"303-326-0848"},{"longName":"BEST
+        BUY - AURORA","storeType":"Big Box","city":"AURORA","distance":9.79,"phone":"303-338-5797"},{"longName":"BEST
+        BUY - LITTLETON","storeType":"Big Box","city":"LAKEWOOD","distance":10.44,"phone":"303-932-7830"},{"longName":"BEST
+        BUY - SOUTHGLENN","storeType":"Big Box","city":"CENTENNIAL","distance":11.02,"phone":"303-797-3246"},{"longName":"BEST
+        BUY - I70 & TOWER RD","storeType":"Big Box","city":"AURORA","distance":11.65,"phone":"303-373-9284"},{"longName":"BEST
+        BUY MOBILE - FLATIRON CROSSING MALL","storeType":"Mobile SAS","city":"BROOMFIELD","distance":14.43,"phone":"303-466-8624"},{"longName":"BEST
+        BUY - S.E. DENVER","storeType":"Big Box","city":"LONE TREE","distance":14.95,"phone":"303-649-9474"},{"longName":"BEST
+        BUY - S.E. AURORA","storeType":"Big Box","city":"AURORA","distance":18.20,"phone":"303-693-0166"},{"longName":"BEST
+        BUY - PARKER","storeType":"Big Box","city":"PARKER","distance":20.82,"phone":"303-840-5501"},{"longName":"BEST
+        BUY - BOULDER","storeType":"Big Box","city":"BOULDER","distance":22.79,"phone":"303-938-2889"}],"warnings":"Distances
         are in terms of miles (default)"}'
     http_version: 
-  recorded_at: Thu, 13 Apr 2017 17:40:33 GMT
+  recorded_at: Thu, 13 Apr 2017 18:04:25 GMT
 - request:
     method: get
-    uri: https://api.bestbuy.com/v1/stores(area(80202,25))?apiKey=<STORE_KEY>&format=json&pageSize=16&show=longName,storeType,city,distance
+    uri: https://api.bestbuy.com/v1/stores(area(80202,25))?apiKey=<STORE_KEY>&format=json&pageSize=16&show=longName,storeType,city,distance,phone
     body:
       encoding: US-ASCII
       string: ''
@@ -149,40 +149,40 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 13 Apr 2017 17:40:55 GMT
+      - Thu, 13 Apr 2017 18:03:38 GMT
       Server:
       - Best Buy Public APIs
       X-Cache-Hit:
       - 'true'
       Content-Length:
-      - '1877'
+      - '2251'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"from":1,"to":16,"currentPage":1,"total":16,"totalPages":1,"queryTime":"0.014","totalTime":"0.027","partial":false,"canonicalUrl":"/v1/stores(area(\"80202\",25))?show=longName,storeType,city,distance&pageSize=16&format=json&apiKey=<STORE_KEY>","stores":[{"longName":"BEST
-        BUY MOBILE - CHERRY CREEK SHOPPING CENTER","storeType":"Mobile SAS","city":"DENVER","distance":3.45},{"longName":"BEST
-        BUY - BELMAR","storeType":"Big Box","city":"LAKEWOOD","distance":5.31},{"longName":"BEST
-        BUY - COLORADO BLVD","storeType":"Big Box","city":"DENVER","distance":5.59},{"longName":"BEST
-        BUY - DENVER WEST","storeType":"Big Box","city":"LAKEWOOD","distance":8.39},{"longName":"BEST
-        BUY - WESTMINSTER","storeType":"Big Box","city":"WESTMINSTER","distance":8.52},{"longName":"BEST
-        BUY - NORTHGLENN","storeType":"Big Box","city":"DENVER","distance":9.14},{"longName":"BEST
-        BUY MOBILE - TOWN CENTER AT AURORA","storeType":"Mobile SAS","city":"AURORA","distance":9.73},{"longName":"BEST
-        BUY - AURORA","storeType":"Big Box","city":"AURORA","distance":9.79},{"longName":"BEST
-        BUY - LITTLETON","storeType":"Big Box","city":"LAKEWOOD","distance":10.44},{"longName":"BEST
-        BUY - SOUTHGLENN","storeType":"Big Box","city":"CENTENNIAL","distance":11.02},{"longName":"BEST
-        BUY - I70 & TOWER RD","storeType":"Big Box","city":"AURORA","distance":11.65},{"longName":"BEST
-        BUY MOBILE - FLATIRON CROSSING MALL","storeType":"Mobile SAS","city":"BROOMFIELD","distance":14.43},{"longName":"BEST
-        BUY - S.E. DENVER","storeType":"Big Box","city":"LONE TREE","distance":14.95},{"longName":"BEST
-        BUY - S.E. AURORA","storeType":"Big Box","city":"AURORA","distance":18.20},{"longName":"BEST
-        BUY - PARKER","storeType":"Big Box","city":"PARKER","distance":20.82},{"longName":"BEST
-        BUY - BOULDER","storeType":"Big Box","city":"BOULDER","distance":22.79}],"warnings":"Distances
+      string: '{"from":1,"to":16,"currentPage":1,"total":16,"totalPages":1,"queryTime":"0.017","totalTime":"0.030","partial":false,"canonicalUrl":"/v1/stores(area(\"80202\",25))?show=longName,storeType,city,distance,phone&pageSize=16&format=json&apiKey=<STORE_KEY>","stores":[{"longName":"BEST
+        BUY MOBILE - CHERRY CREEK SHOPPING CENTER","storeType":"Mobile SAS","city":"DENVER","distance":3.45,"phone":"303-270-9189"},{"longName":"BEST
+        BUY - BELMAR","storeType":"Big Box","city":"LAKEWOOD","distance":5.31,"phone":"303-742-8039"},{"longName":"BEST
+        BUY - COLORADO BLVD","storeType":"Big Box","city":"DENVER","distance":5.59,"phone":"303-758-5805"},{"longName":"BEST
+        BUY - DENVER WEST","storeType":"Big Box","city":"LAKEWOOD","distance":8.39,"phone":"303-273-5617"},{"longName":"BEST
+        BUY - WESTMINSTER","storeType":"Big Box","city":"WESTMINSTER","distance":8.52,"phone":"303-426-4434"},{"longName":"BEST
+        BUY - NORTHGLENN","storeType":"Big Box","city":"DENVER","distance":9.14,"phone":"303-252-8677"},{"longName":"BEST
+        BUY MOBILE - TOWN CENTER AT AURORA","storeType":"Mobile SAS","city":"AURORA","distance":9.73,"phone":"303-326-0848"},{"longName":"BEST
+        BUY - AURORA","storeType":"Big Box","city":"AURORA","distance":9.79,"phone":"303-338-5797"},{"longName":"BEST
+        BUY - LITTLETON","storeType":"Big Box","city":"LAKEWOOD","distance":10.44,"phone":"303-932-7830"},{"longName":"BEST
+        BUY - SOUTHGLENN","storeType":"Big Box","city":"CENTENNIAL","distance":11.02,"phone":"303-797-3246"},{"longName":"BEST
+        BUY - I70 & TOWER RD","storeType":"Big Box","city":"AURORA","distance":11.65,"phone":"303-373-9284"},{"longName":"BEST
+        BUY MOBILE - FLATIRON CROSSING MALL","storeType":"Mobile SAS","city":"BROOMFIELD","distance":14.43,"phone":"303-466-8624"},{"longName":"BEST
+        BUY - S.E. DENVER","storeType":"Big Box","city":"LONE TREE","distance":14.95,"phone":"303-649-9474"},{"longName":"BEST
+        BUY - S.E. AURORA","storeType":"Big Box","city":"AURORA","distance":18.20,"phone":"303-693-0166"},{"longName":"BEST
+        BUY - PARKER","storeType":"Big Box","city":"PARKER","distance":20.82,"phone":"303-840-5501"},{"longName":"BEST
+        BUY - BOULDER","storeType":"Big Box","city":"BOULDER","distance":22.79,"phone":"303-938-2889"}],"warnings":"Distances
         are in terms of miles (default)"}'
     http_version: 
-  recorded_at: Thu, 13 Apr 2017 17:40:33 GMT
+  recorded_at: Thu, 13 Apr 2017 18:04:25 GMT
 - request:
     method: get
-    uri: https://api.bestbuy.com/v1/stores(area(80202,25))?apiKey=<STORE_KEY>&format=json&pageSize=16&show=longName,storeType,city,distance
+    uri: https://api.bestbuy.com/v1/stores(area(80202,25))?apiKey=<STORE_KEY>&format=json&pageSize=16&show=longName,storeType,city,distance,phone
     body:
       encoding: US-ASCII
       string: ''
@@ -209,40 +209,40 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 13 Apr 2017 17:39:46 GMT
+      - Thu, 13 Apr 2017 18:05:02 GMT
       Server:
       - Best Buy Public APIs
       X-Cache-Hit:
       - 'true'
       Content-Length:
-      - '1877'
+      - '2251'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"from":1,"to":16,"currentPage":1,"total":16,"totalPages":1,"queryTime":"0.014","totalTime":"0.027","partial":false,"canonicalUrl":"/v1/stores(area(\"80202\",25))?show=longName,storeType,city,distance&pageSize=16&format=json&apiKey=<STORE_KEY>","stores":[{"longName":"BEST
-        BUY MOBILE - CHERRY CREEK SHOPPING CENTER","storeType":"Mobile SAS","city":"DENVER","distance":3.45},{"longName":"BEST
-        BUY - BELMAR","storeType":"Big Box","city":"LAKEWOOD","distance":5.31},{"longName":"BEST
-        BUY - COLORADO BLVD","storeType":"Big Box","city":"DENVER","distance":5.59},{"longName":"BEST
-        BUY - DENVER WEST","storeType":"Big Box","city":"LAKEWOOD","distance":8.39},{"longName":"BEST
-        BUY - WESTMINSTER","storeType":"Big Box","city":"WESTMINSTER","distance":8.52},{"longName":"BEST
-        BUY - NORTHGLENN","storeType":"Big Box","city":"DENVER","distance":9.14},{"longName":"BEST
-        BUY MOBILE - TOWN CENTER AT AURORA","storeType":"Mobile SAS","city":"AURORA","distance":9.73},{"longName":"BEST
-        BUY - AURORA","storeType":"Big Box","city":"AURORA","distance":9.79},{"longName":"BEST
-        BUY - LITTLETON","storeType":"Big Box","city":"LAKEWOOD","distance":10.44},{"longName":"BEST
-        BUY - SOUTHGLENN","storeType":"Big Box","city":"CENTENNIAL","distance":11.02},{"longName":"BEST
-        BUY - I70 & TOWER RD","storeType":"Big Box","city":"AURORA","distance":11.65},{"longName":"BEST
-        BUY MOBILE - FLATIRON CROSSING MALL","storeType":"Mobile SAS","city":"BROOMFIELD","distance":14.43},{"longName":"BEST
-        BUY - S.E. DENVER","storeType":"Big Box","city":"LONE TREE","distance":14.95},{"longName":"BEST
-        BUY - S.E. AURORA","storeType":"Big Box","city":"AURORA","distance":18.20},{"longName":"BEST
-        BUY - PARKER","storeType":"Big Box","city":"PARKER","distance":20.82},{"longName":"BEST
-        BUY - BOULDER","storeType":"Big Box","city":"BOULDER","distance":22.79}],"warnings":"Distances
+      string: '{"from":1,"to":16,"currentPage":1,"total":16,"totalPages":1,"queryTime":"0.017","totalTime":"0.030","partial":false,"canonicalUrl":"/v1/stores(area(\"80202\",25))?show=longName,storeType,city,distance,phone&pageSize=16&format=json&apiKey=<STORE_KEY>","stores":[{"longName":"BEST
+        BUY MOBILE - CHERRY CREEK SHOPPING CENTER","storeType":"Mobile SAS","city":"DENVER","distance":3.45,"phone":"303-270-9189"},{"longName":"BEST
+        BUY - BELMAR","storeType":"Big Box","city":"LAKEWOOD","distance":5.31,"phone":"303-742-8039"},{"longName":"BEST
+        BUY - COLORADO BLVD","storeType":"Big Box","city":"DENVER","distance":5.59,"phone":"303-758-5805"},{"longName":"BEST
+        BUY - DENVER WEST","storeType":"Big Box","city":"LAKEWOOD","distance":8.39,"phone":"303-273-5617"},{"longName":"BEST
+        BUY - WESTMINSTER","storeType":"Big Box","city":"WESTMINSTER","distance":8.52,"phone":"303-426-4434"},{"longName":"BEST
+        BUY - NORTHGLENN","storeType":"Big Box","city":"DENVER","distance":9.14,"phone":"303-252-8677"},{"longName":"BEST
+        BUY MOBILE - TOWN CENTER AT AURORA","storeType":"Mobile SAS","city":"AURORA","distance":9.73,"phone":"303-326-0848"},{"longName":"BEST
+        BUY - AURORA","storeType":"Big Box","city":"AURORA","distance":9.79,"phone":"303-338-5797"},{"longName":"BEST
+        BUY - LITTLETON","storeType":"Big Box","city":"LAKEWOOD","distance":10.44,"phone":"303-932-7830"},{"longName":"BEST
+        BUY - SOUTHGLENN","storeType":"Big Box","city":"CENTENNIAL","distance":11.02,"phone":"303-797-3246"},{"longName":"BEST
+        BUY - I70 & TOWER RD","storeType":"Big Box","city":"AURORA","distance":11.65,"phone":"303-373-9284"},{"longName":"BEST
+        BUY MOBILE - FLATIRON CROSSING MALL","storeType":"Mobile SAS","city":"BROOMFIELD","distance":14.43,"phone":"303-466-8624"},{"longName":"BEST
+        BUY - S.E. DENVER","storeType":"Big Box","city":"LONE TREE","distance":14.95,"phone":"303-649-9474"},{"longName":"BEST
+        BUY - S.E. AURORA","storeType":"Big Box","city":"AURORA","distance":18.20,"phone":"303-693-0166"},{"longName":"BEST
+        BUY - PARKER","storeType":"Big Box","city":"PARKER","distance":20.82,"phone":"303-840-5501"},{"longName":"BEST
+        BUY - BOULDER","storeType":"Big Box","city":"BOULDER","distance":22.79,"phone":"303-938-2889"}],"warnings":"Distances
         are in terms of miles (default)"}'
     http_version: 
-  recorded_at: Thu, 13 Apr 2017 17:40:33 GMT
+  recorded_at: Thu, 13 Apr 2017 18:04:26 GMT
 - request:
     method: get
-    uri: https://api.bestbuy.com/v1/stores(area(80202,25))?apiKey=<STORE_KEY>&format=json&pageSize=16&show=longName,storeType,city,distance
+    uri: https://api.bestbuy.com/v1/stores(area(80202,25))?apiKey=<STORE_KEY>&format=json&pageSize=16&show=longName,storeType,city,distance,phone
     body:
       encoding: US-ASCII
       string: ''
@@ -269,40 +269,40 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 13 Apr 2017 17:39:47 GMT
+      - Thu, 13 Apr 2017 18:04:48 GMT
       Server:
       - Best Buy Public APIs
       X-Cache-Hit:
       - 'true'
       Content-Length:
-      - '1877'
+      - '2251'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"from":1,"to":16,"currentPage":1,"total":16,"totalPages":1,"queryTime":"0.014","totalTime":"0.027","partial":false,"canonicalUrl":"/v1/stores(area(\"80202\",25))?show=longName,storeType,city,distance&pageSize=16&format=json&apiKey=<STORE_KEY>","stores":[{"longName":"BEST
-        BUY MOBILE - CHERRY CREEK SHOPPING CENTER","storeType":"Mobile SAS","city":"DENVER","distance":3.45},{"longName":"BEST
-        BUY - BELMAR","storeType":"Big Box","city":"LAKEWOOD","distance":5.31},{"longName":"BEST
-        BUY - COLORADO BLVD","storeType":"Big Box","city":"DENVER","distance":5.59},{"longName":"BEST
-        BUY - DENVER WEST","storeType":"Big Box","city":"LAKEWOOD","distance":8.39},{"longName":"BEST
-        BUY - WESTMINSTER","storeType":"Big Box","city":"WESTMINSTER","distance":8.52},{"longName":"BEST
-        BUY - NORTHGLENN","storeType":"Big Box","city":"DENVER","distance":9.14},{"longName":"BEST
-        BUY MOBILE - TOWN CENTER AT AURORA","storeType":"Mobile SAS","city":"AURORA","distance":9.73},{"longName":"BEST
-        BUY - AURORA","storeType":"Big Box","city":"AURORA","distance":9.79},{"longName":"BEST
-        BUY - LITTLETON","storeType":"Big Box","city":"LAKEWOOD","distance":10.44},{"longName":"BEST
-        BUY - SOUTHGLENN","storeType":"Big Box","city":"CENTENNIAL","distance":11.02},{"longName":"BEST
-        BUY - I70 & TOWER RD","storeType":"Big Box","city":"AURORA","distance":11.65},{"longName":"BEST
-        BUY MOBILE - FLATIRON CROSSING MALL","storeType":"Mobile SAS","city":"BROOMFIELD","distance":14.43},{"longName":"BEST
-        BUY - S.E. DENVER","storeType":"Big Box","city":"LONE TREE","distance":14.95},{"longName":"BEST
-        BUY - S.E. AURORA","storeType":"Big Box","city":"AURORA","distance":18.20},{"longName":"BEST
-        BUY - PARKER","storeType":"Big Box","city":"PARKER","distance":20.82},{"longName":"BEST
-        BUY - BOULDER","storeType":"Big Box","city":"BOULDER","distance":22.79}],"warnings":"Distances
+      string: '{"from":1,"to":16,"currentPage":1,"total":16,"totalPages":1,"queryTime":"0.017","totalTime":"0.030","partial":false,"canonicalUrl":"/v1/stores(area(\"80202\",25))?show=longName,storeType,city,distance,phone&pageSize=16&format=json&apiKey=<STORE_KEY>","stores":[{"longName":"BEST
+        BUY MOBILE - CHERRY CREEK SHOPPING CENTER","storeType":"Mobile SAS","city":"DENVER","distance":3.45,"phone":"303-270-9189"},{"longName":"BEST
+        BUY - BELMAR","storeType":"Big Box","city":"LAKEWOOD","distance":5.31,"phone":"303-742-8039"},{"longName":"BEST
+        BUY - COLORADO BLVD","storeType":"Big Box","city":"DENVER","distance":5.59,"phone":"303-758-5805"},{"longName":"BEST
+        BUY - DENVER WEST","storeType":"Big Box","city":"LAKEWOOD","distance":8.39,"phone":"303-273-5617"},{"longName":"BEST
+        BUY - WESTMINSTER","storeType":"Big Box","city":"WESTMINSTER","distance":8.52,"phone":"303-426-4434"},{"longName":"BEST
+        BUY - NORTHGLENN","storeType":"Big Box","city":"DENVER","distance":9.14,"phone":"303-252-8677"},{"longName":"BEST
+        BUY MOBILE - TOWN CENTER AT AURORA","storeType":"Mobile SAS","city":"AURORA","distance":9.73,"phone":"303-326-0848"},{"longName":"BEST
+        BUY - AURORA","storeType":"Big Box","city":"AURORA","distance":9.79,"phone":"303-338-5797"},{"longName":"BEST
+        BUY - LITTLETON","storeType":"Big Box","city":"LAKEWOOD","distance":10.44,"phone":"303-932-7830"},{"longName":"BEST
+        BUY - SOUTHGLENN","storeType":"Big Box","city":"CENTENNIAL","distance":11.02,"phone":"303-797-3246"},{"longName":"BEST
+        BUY - I70 & TOWER RD","storeType":"Big Box","city":"AURORA","distance":11.65,"phone":"303-373-9284"},{"longName":"BEST
+        BUY MOBILE - FLATIRON CROSSING MALL","storeType":"Mobile SAS","city":"BROOMFIELD","distance":14.43,"phone":"303-466-8624"},{"longName":"BEST
+        BUY - S.E. DENVER","storeType":"Big Box","city":"LONE TREE","distance":14.95,"phone":"303-649-9474"},{"longName":"BEST
+        BUY - S.E. AURORA","storeType":"Big Box","city":"AURORA","distance":18.20,"phone":"303-693-0166"},{"longName":"BEST
+        BUY - PARKER","storeType":"Big Box","city":"PARKER","distance":20.82,"phone":"303-840-5501"},{"longName":"BEST
+        BUY - BOULDER","storeType":"Big Box","city":"BOULDER","distance":22.79,"phone":"303-938-2889"}],"warnings":"Distances
         are in terms of miles (default)"}'
     http_version: 
-  recorded_at: Thu, 13 Apr 2017 17:40:34 GMT
+  recorded_at: Thu, 13 Apr 2017 18:04:26 GMT
 - request:
     method: get
-    uri: https://api.bestbuy.com/v1/stores(area(80202,25))?apiKey=<STORE_KEY>&format=json&pageSize=16&show=longName,storeType,city,distance
+    uri: https://api.bestbuy.com/v1/stores(area(80202,25))?apiKey=<STORE_KEY>&format=json&pageSize=16&show=longName,storeType,city,distance,phone
     body:
       encoding: US-ASCII
       string: ''
@@ -329,40 +329,40 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 13 Apr 2017 17:41:11 GMT
+      - Thu, 13 Apr 2017 18:04:48 GMT
       Server:
       - Best Buy Public APIs
       X-Cache-Hit:
       - 'true'
       Content-Length:
-      - '1877'
+      - '2251'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"from":1,"to":16,"currentPage":1,"total":16,"totalPages":1,"queryTime":"0.014","totalTime":"0.027","partial":false,"canonicalUrl":"/v1/stores(area(\"80202\",25))?show=longName,storeType,city,distance&pageSize=16&format=json&apiKey=<STORE_KEY>","stores":[{"longName":"BEST
-        BUY MOBILE - CHERRY CREEK SHOPPING CENTER","storeType":"Mobile SAS","city":"DENVER","distance":3.45},{"longName":"BEST
-        BUY - BELMAR","storeType":"Big Box","city":"LAKEWOOD","distance":5.31},{"longName":"BEST
-        BUY - COLORADO BLVD","storeType":"Big Box","city":"DENVER","distance":5.59},{"longName":"BEST
-        BUY - DENVER WEST","storeType":"Big Box","city":"LAKEWOOD","distance":8.39},{"longName":"BEST
-        BUY - WESTMINSTER","storeType":"Big Box","city":"WESTMINSTER","distance":8.52},{"longName":"BEST
-        BUY - NORTHGLENN","storeType":"Big Box","city":"DENVER","distance":9.14},{"longName":"BEST
-        BUY MOBILE - TOWN CENTER AT AURORA","storeType":"Mobile SAS","city":"AURORA","distance":9.73},{"longName":"BEST
-        BUY - AURORA","storeType":"Big Box","city":"AURORA","distance":9.79},{"longName":"BEST
-        BUY - LITTLETON","storeType":"Big Box","city":"LAKEWOOD","distance":10.44},{"longName":"BEST
-        BUY - SOUTHGLENN","storeType":"Big Box","city":"CENTENNIAL","distance":11.02},{"longName":"BEST
-        BUY - I70 & TOWER RD","storeType":"Big Box","city":"AURORA","distance":11.65},{"longName":"BEST
-        BUY MOBILE - FLATIRON CROSSING MALL","storeType":"Mobile SAS","city":"BROOMFIELD","distance":14.43},{"longName":"BEST
-        BUY - S.E. DENVER","storeType":"Big Box","city":"LONE TREE","distance":14.95},{"longName":"BEST
-        BUY - S.E. AURORA","storeType":"Big Box","city":"AURORA","distance":18.20},{"longName":"BEST
-        BUY - PARKER","storeType":"Big Box","city":"PARKER","distance":20.82},{"longName":"BEST
-        BUY - BOULDER","storeType":"Big Box","city":"BOULDER","distance":22.79}],"warnings":"Distances
+      string: '{"from":1,"to":16,"currentPage":1,"total":16,"totalPages":1,"queryTime":"0.017","totalTime":"0.030","partial":false,"canonicalUrl":"/v1/stores(area(\"80202\",25))?show=longName,storeType,city,distance,phone&pageSize=16&format=json&apiKey=<STORE_KEY>","stores":[{"longName":"BEST
+        BUY MOBILE - CHERRY CREEK SHOPPING CENTER","storeType":"Mobile SAS","city":"DENVER","distance":3.45,"phone":"303-270-9189"},{"longName":"BEST
+        BUY - BELMAR","storeType":"Big Box","city":"LAKEWOOD","distance":5.31,"phone":"303-742-8039"},{"longName":"BEST
+        BUY - COLORADO BLVD","storeType":"Big Box","city":"DENVER","distance":5.59,"phone":"303-758-5805"},{"longName":"BEST
+        BUY - DENVER WEST","storeType":"Big Box","city":"LAKEWOOD","distance":8.39,"phone":"303-273-5617"},{"longName":"BEST
+        BUY - WESTMINSTER","storeType":"Big Box","city":"WESTMINSTER","distance":8.52,"phone":"303-426-4434"},{"longName":"BEST
+        BUY - NORTHGLENN","storeType":"Big Box","city":"DENVER","distance":9.14,"phone":"303-252-8677"},{"longName":"BEST
+        BUY MOBILE - TOWN CENTER AT AURORA","storeType":"Mobile SAS","city":"AURORA","distance":9.73,"phone":"303-326-0848"},{"longName":"BEST
+        BUY - AURORA","storeType":"Big Box","city":"AURORA","distance":9.79,"phone":"303-338-5797"},{"longName":"BEST
+        BUY - LITTLETON","storeType":"Big Box","city":"LAKEWOOD","distance":10.44,"phone":"303-932-7830"},{"longName":"BEST
+        BUY - SOUTHGLENN","storeType":"Big Box","city":"CENTENNIAL","distance":11.02,"phone":"303-797-3246"},{"longName":"BEST
+        BUY - I70 & TOWER RD","storeType":"Big Box","city":"AURORA","distance":11.65,"phone":"303-373-9284"},{"longName":"BEST
+        BUY MOBILE - FLATIRON CROSSING MALL","storeType":"Mobile SAS","city":"BROOMFIELD","distance":14.43,"phone":"303-466-8624"},{"longName":"BEST
+        BUY - S.E. DENVER","storeType":"Big Box","city":"LONE TREE","distance":14.95,"phone":"303-649-9474"},{"longName":"BEST
+        BUY - S.E. AURORA","storeType":"Big Box","city":"AURORA","distance":18.20,"phone":"303-693-0166"},{"longName":"BEST
+        BUY - PARKER","storeType":"Big Box","city":"PARKER","distance":20.82,"phone":"303-840-5501"},{"longName":"BEST
+        BUY - BOULDER","storeType":"Big Box","city":"BOULDER","distance":22.79,"phone":"303-938-2889"}],"warnings":"Distances
         are in terms of miles (default)"}'
     http_version: 
-  recorded_at: Thu, 13 Apr 2017 17:40:34 GMT
+  recorded_at: Thu, 13 Apr 2017 18:04:27 GMT
 - request:
     method: get
-    uri: https://api.bestbuy.com/v1/stores(area(80202,25))?apiKey=<STORE_KEY>&format=json&pageSize=16&show=longName,storeType,city,distance
+    uri: https://api.bestbuy.com/v1/stores(area(80202,25))?apiKey=<STORE_KEY>&format=json&pageSize=16&show=longName,storeType,city,distance,phone
     body:
       encoding: US-ASCII
       string: ''
@@ -389,40 +389,40 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 13 Apr 2017 17:40:56 GMT
+      - Thu, 13 Apr 2017 18:04:48 GMT
       Server:
       - Best Buy Public APIs
       X-Cache-Hit:
       - 'true'
       Content-Length:
-      - '1877'
+      - '2251'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"from":1,"to":16,"currentPage":1,"total":16,"totalPages":1,"queryTime":"0.014","totalTime":"0.027","partial":false,"canonicalUrl":"/v1/stores(area(\"80202\",25))?show=longName,storeType,city,distance&pageSize=16&format=json&apiKey=<STORE_KEY>","stores":[{"longName":"BEST
-        BUY MOBILE - CHERRY CREEK SHOPPING CENTER","storeType":"Mobile SAS","city":"DENVER","distance":3.45},{"longName":"BEST
-        BUY - BELMAR","storeType":"Big Box","city":"LAKEWOOD","distance":5.31},{"longName":"BEST
-        BUY - COLORADO BLVD","storeType":"Big Box","city":"DENVER","distance":5.59},{"longName":"BEST
-        BUY - DENVER WEST","storeType":"Big Box","city":"LAKEWOOD","distance":8.39},{"longName":"BEST
-        BUY - WESTMINSTER","storeType":"Big Box","city":"WESTMINSTER","distance":8.52},{"longName":"BEST
-        BUY - NORTHGLENN","storeType":"Big Box","city":"DENVER","distance":9.14},{"longName":"BEST
-        BUY MOBILE - TOWN CENTER AT AURORA","storeType":"Mobile SAS","city":"AURORA","distance":9.73},{"longName":"BEST
-        BUY - AURORA","storeType":"Big Box","city":"AURORA","distance":9.79},{"longName":"BEST
-        BUY - LITTLETON","storeType":"Big Box","city":"LAKEWOOD","distance":10.44},{"longName":"BEST
-        BUY - SOUTHGLENN","storeType":"Big Box","city":"CENTENNIAL","distance":11.02},{"longName":"BEST
-        BUY - I70 & TOWER RD","storeType":"Big Box","city":"AURORA","distance":11.65},{"longName":"BEST
-        BUY MOBILE - FLATIRON CROSSING MALL","storeType":"Mobile SAS","city":"BROOMFIELD","distance":14.43},{"longName":"BEST
-        BUY - S.E. DENVER","storeType":"Big Box","city":"LONE TREE","distance":14.95},{"longName":"BEST
-        BUY - S.E. AURORA","storeType":"Big Box","city":"AURORA","distance":18.20},{"longName":"BEST
-        BUY - PARKER","storeType":"Big Box","city":"PARKER","distance":20.82},{"longName":"BEST
-        BUY - BOULDER","storeType":"Big Box","city":"BOULDER","distance":22.79}],"warnings":"Distances
+      string: '{"from":1,"to":16,"currentPage":1,"total":16,"totalPages":1,"queryTime":"0.017","totalTime":"0.030","partial":false,"canonicalUrl":"/v1/stores(area(\"80202\",25))?show=longName,storeType,city,distance,phone&pageSize=16&format=json&apiKey=<STORE_KEY>","stores":[{"longName":"BEST
+        BUY MOBILE - CHERRY CREEK SHOPPING CENTER","storeType":"Mobile SAS","city":"DENVER","distance":3.45,"phone":"303-270-9189"},{"longName":"BEST
+        BUY - BELMAR","storeType":"Big Box","city":"LAKEWOOD","distance":5.31,"phone":"303-742-8039"},{"longName":"BEST
+        BUY - COLORADO BLVD","storeType":"Big Box","city":"DENVER","distance":5.59,"phone":"303-758-5805"},{"longName":"BEST
+        BUY - DENVER WEST","storeType":"Big Box","city":"LAKEWOOD","distance":8.39,"phone":"303-273-5617"},{"longName":"BEST
+        BUY - WESTMINSTER","storeType":"Big Box","city":"WESTMINSTER","distance":8.52,"phone":"303-426-4434"},{"longName":"BEST
+        BUY - NORTHGLENN","storeType":"Big Box","city":"DENVER","distance":9.14,"phone":"303-252-8677"},{"longName":"BEST
+        BUY MOBILE - TOWN CENTER AT AURORA","storeType":"Mobile SAS","city":"AURORA","distance":9.73,"phone":"303-326-0848"},{"longName":"BEST
+        BUY - AURORA","storeType":"Big Box","city":"AURORA","distance":9.79,"phone":"303-338-5797"},{"longName":"BEST
+        BUY - LITTLETON","storeType":"Big Box","city":"LAKEWOOD","distance":10.44,"phone":"303-932-7830"},{"longName":"BEST
+        BUY - SOUTHGLENN","storeType":"Big Box","city":"CENTENNIAL","distance":11.02,"phone":"303-797-3246"},{"longName":"BEST
+        BUY - I70 & TOWER RD","storeType":"Big Box","city":"AURORA","distance":11.65,"phone":"303-373-9284"},{"longName":"BEST
+        BUY MOBILE - FLATIRON CROSSING MALL","storeType":"Mobile SAS","city":"BROOMFIELD","distance":14.43,"phone":"303-466-8624"},{"longName":"BEST
+        BUY - S.E. DENVER","storeType":"Big Box","city":"LONE TREE","distance":14.95,"phone":"303-649-9474"},{"longName":"BEST
+        BUY - S.E. AURORA","storeType":"Big Box","city":"AURORA","distance":18.20,"phone":"303-693-0166"},{"longName":"BEST
+        BUY - PARKER","storeType":"Big Box","city":"PARKER","distance":20.82,"phone":"303-840-5501"},{"longName":"BEST
+        BUY - BOULDER","storeType":"Big Box","city":"BOULDER","distance":22.79,"phone":"303-938-2889"}],"warnings":"Distances
         are in terms of miles (default)"}'
     http_version: 
-  recorded_at: Thu, 13 Apr 2017 17:40:34 GMT
+  recorded_at: Thu, 13 Apr 2017 18:04:27 GMT
 - request:
     method: get
-    uri: https://api.bestbuy.com/v1/stores(area(80202,25))?apiKey=<STORE_KEY>&format=json&pageSize=16&show=longName,storeType,city,distance
+    uri: https://api.bestbuy.com/v1/stores(area(80202,25))?apiKey=<STORE_KEY>&format=json&pageSize=16&show=longName,storeType,city,distance,phone
     body:
       encoding: US-ASCII
       string: ''
@@ -449,35 +449,35 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 13 Apr 2017 17:40:56 GMT
+      - Thu, 13 Apr 2017 18:03:40 GMT
       Server:
       - Best Buy Public APIs
       X-Cache-Hit:
       - 'true'
       Content-Length:
-      - '1877'
+      - '2251'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"from":1,"to":16,"currentPage":1,"total":16,"totalPages":1,"queryTime":"0.014","totalTime":"0.027","partial":false,"canonicalUrl":"/v1/stores(area(\"80202\",25))?show=longName,storeType,city,distance&pageSize=16&format=json&apiKey=<STORE_KEY>","stores":[{"longName":"BEST
-        BUY MOBILE - CHERRY CREEK SHOPPING CENTER","storeType":"Mobile SAS","city":"DENVER","distance":3.45},{"longName":"BEST
-        BUY - BELMAR","storeType":"Big Box","city":"LAKEWOOD","distance":5.31},{"longName":"BEST
-        BUY - COLORADO BLVD","storeType":"Big Box","city":"DENVER","distance":5.59},{"longName":"BEST
-        BUY - DENVER WEST","storeType":"Big Box","city":"LAKEWOOD","distance":8.39},{"longName":"BEST
-        BUY - WESTMINSTER","storeType":"Big Box","city":"WESTMINSTER","distance":8.52},{"longName":"BEST
-        BUY - NORTHGLENN","storeType":"Big Box","city":"DENVER","distance":9.14},{"longName":"BEST
-        BUY MOBILE - TOWN CENTER AT AURORA","storeType":"Mobile SAS","city":"AURORA","distance":9.73},{"longName":"BEST
-        BUY - AURORA","storeType":"Big Box","city":"AURORA","distance":9.79},{"longName":"BEST
-        BUY - LITTLETON","storeType":"Big Box","city":"LAKEWOOD","distance":10.44},{"longName":"BEST
-        BUY - SOUTHGLENN","storeType":"Big Box","city":"CENTENNIAL","distance":11.02},{"longName":"BEST
-        BUY - I70 & TOWER RD","storeType":"Big Box","city":"AURORA","distance":11.65},{"longName":"BEST
-        BUY MOBILE - FLATIRON CROSSING MALL","storeType":"Mobile SAS","city":"BROOMFIELD","distance":14.43},{"longName":"BEST
-        BUY - S.E. DENVER","storeType":"Big Box","city":"LONE TREE","distance":14.95},{"longName":"BEST
-        BUY - S.E. AURORA","storeType":"Big Box","city":"AURORA","distance":18.20},{"longName":"BEST
-        BUY - PARKER","storeType":"Big Box","city":"PARKER","distance":20.82},{"longName":"BEST
-        BUY - BOULDER","storeType":"Big Box","city":"BOULDER","distance":22.79}],"warnings":"Distances
+      string: '{"from":1,"to":16,"currentPage":1,"total":16,"totalPages":1,"queryTime":"0.017","totalTime":"0.030","partial":false,"canonicalUrl":"/v1/stores(area(\"80202\",25))?show=longName,storeType,city,distance,phone&pageSize=16&format=json&apiKey=<STORE_KEY>","stores":[{"longName":"BEST
+        BUY MOBILE - CHERRY CREEK SHOPPING CENTER","storeType":"Mobile SAS","city":"DENVER","distance":3.45,"phone":"303-270-9189"},{"longName":"BEST
+        BUY - BELMAR","storeType":"Big Box","city":"LAKEWOOD","distance":5.31,"phone":"303-742-8039"},{"longName":"BEST
+        BUY - COLORADO BLVD","storeType":"Big Box","city":"DENVER","distance":5.59,"phone":"303-758-5805"},{"longName":"BEST
+        BUY - DENVER WEST","storeType":"Big Box","city":"LAKEWOOD","distance":8.39,"phone":"303-273-5617"},{"longName":"BEST
+        BUY - WESTMINSTER","storeType":"Big Box","city":"WESTMINSTER","distance":8.52,"phone":"303-426-4434"},{"longName":"BEST
+        BUY - NORTHGLENN","storeType":"Big Box","city":"DENVER","distance":9.14,"phone":"303-252-8677"},{"longName":"BEST
+        BUY MOBILE - TOWN CENTER AT AURORA","storeType":"Mobile SAS","city":"AURORA","distance":9.73,"phone":"303-326-0848"},{"longName":"BEST
+        BUY - AURORA","storeType":"Big Box","city":"AURORA","distance":9.79,"phone":"303-338-5797"},{"longName":"BEST
+        BUY - LITTLETON","storeType":"Big Box","city":"LAKEWOOD","distance":10.44,"phone":"303-932-7830"},{"longName":"BEST
+        BUY - SOUTHGLENN","storeType":"Big Box","city":"CENTENNIAL","distance":11.02,"phone":"303-797-3246"},{"longName":"BEST
+        BUY - I70 & TOWER RD","storeType":"Big Box","city":"AURORA","distance":11.65,"phone":"303-373-9284"},{"longName":"BEST
+        BUY MOBILE - FLATIRON CROSSING MALL","storeType":"Mobile SAS","city":"BROOMFIELD","distance":14.43,"phone":"303-466-8624"},{"longName":"BEST
+        BUY - S.E. DENVER","storeType":"Big Box","city":"LONE TREE","distance":14.95,"phone":"303-649-9474"},{"longName":"BEST
+        BUY - S.E. AURORA","storeType":"Big Box","city":"AURORA","distance":18.20,"phone":"303-693-0166"},{"longName":"BEST
+        BUY - PARKER","storeType":"Big Box","city":"PARKER","distance":20.82,"phone":"303-840-5501"},{"longName":"BEST
+        BUY - BOULDER","storeType":"Big Box","city":"BOULDER","distance":22.79,"phone":"303-938-2889"}],"warnings":"Distances
         are in terms of miles (default)"}'
     http_version: 
-  recorded_at: Thu, 13 Apr 2017 17:40:35 GMT
+  recorded_at: Thu, 13 Apr 2017 18:04:27 GMT
 recorded_with: VCR 3.0.3

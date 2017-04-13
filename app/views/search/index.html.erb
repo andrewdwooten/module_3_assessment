@@ -15,6 +15,9 @@
         <td>
           Distance
         </td>
+        <td>
+          phone
+        </td>
       </th>
       <% @stores.each do |store| %>
         <div id='store_instance'>
@@ -30,6 +33,9 @@
             </td>
             <td>
               <%= store.distance %>
+            </td>
+            <td>
+              <%= store.phone %>
             </td>
           </tr>
         <% end %>
